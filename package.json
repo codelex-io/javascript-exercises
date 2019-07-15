@@ -4,6 +4,7 @@
   "author": "codelex",
   "license": "ISC",
   "scripts": {
+    "test":"jest",
     "test:easy": "jest exercises/easy",
     "prettier": "prettier --write exercises/**/*.js",
     "prettier:check": "prettier --check exercises/**/*.js"
