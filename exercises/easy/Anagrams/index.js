@@ -12,6 +12,21 @@
  * anagrams('Hi there', 'Bye there') === false
  */
 
-function anagrams(stringA, stringB) {}
+function anagrams(stringA, stringB) {
+    //sakumaa notiram virknes
+    function cleanString(string){
+        const alphaOnly = string.replace(/[^a-zA-Z]/gi, '');
+        return alphaOnly.toLowerCase();
+    }
+    stringA = cleanString(stringA);
+    stringB = cleanString(stringB);
+    
+    //viena no metodeem kaa salidzinaat anagrammas ir saskirot un tad salidzinaat.
+    //javascript ir array.sort() metode
+    stringA = stringA.sort();
+    stringB = stringB.sort();
+    console.log(stringA);
+    console.log(stringB);
 
+}
 module.exports = anagrams;
