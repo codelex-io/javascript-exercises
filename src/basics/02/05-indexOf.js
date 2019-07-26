@@ -19,6 +19,7 @@ console.log(newNames);
 
 /* 
   Expected result:
+  
       [1, 3]
       [John, Alice]
 */
